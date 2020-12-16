@@ -1,0 +1,7 @@
+﻿@page "/counter"
+@page "/counter/{StartingCount:int}"
+
+<h1>Counter</h1>
+
+<Counter StartingCount="@StartingCount.GetValueOrDefault()"
+    CounterIncrement="5" />
